@@ -53,6 +53,6 @@ class MyMath:
         """
         Ejecuta la raiz de un elemnto
         :param a: Elemento de la raiz cuadrada
-        :return: La raíz del elemento
+        :return: La raiz del elemento
         """
         return  math.sqrt(a)
