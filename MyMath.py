@@ -52,7 +52,7 @@ class MyMath:
     def squareroot(a):
         """
         Ejecuta la raíz de un elemnto
-        :param a: Elemento de la raíz cuadrada
+        :param a: Elemento de la raiz cuadrada
         :return: La raíz del elemento
         """
         return  math.sqrt(a)
