@@ -51,7 +51,7 @@ class MyMath:
     @staticmethod
     def squareroot(a):
         """
-        Ejecuta la raíz de un elemnto
+        Ejecuta la raiz de un elemnto
         :param a: Elemento de la raiz cuadrada
         :return: La raíz del elemento
         """
