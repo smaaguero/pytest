@@ -7,6 +7,7 @@ Añadir en un futuro a dockerHUB
 -Lanzo el docker de chanfr/jenkins:
         docker run --privileged -v /var/run/docker.sock:/var/run/docker/docker.sock -p 8000:8080 --name jenkinsMaster chanfr/jenkins
 
+
 -Saco la contraseña de jenkins
         docker logs jenkinsMaster
 
@@ -28,4 +29,24 @@ py.test --junitxml results.xml test.py
 
 ************************ C++                    ************************
 -Instalo xunit plugin
--
+-Hago el fork del proyecto de Fran
+-Configuro el Ejecutar y Accionar para ejecutar después
+
+
+************************ Nodo esclavo           ************************
+- Me creo un contenedor nuevo,
+      docker run --privileged --name jenkinsSlave chanfr/jenkins
+
+- Lanzar ssh en la máquina esclava
+      docker exec -ti jenkinsSlave bash
+            Dentro de bash "sudo /etc/init.d/ssh start"
+
+- Instalar java8
+      sudo apt-get install openjdk-8-jre
+
+- Me conecto desde el nodo maestro al nodo esclavo, para pasar lo de yes.
+
+- En administrar nodos (captura)
+      --> Nuevo nodo
+      --> Permanent Agent
+      --> Nombrar
