@@ -1,0 +1,26 @@
+
+
+Añadir en un futuro a dockerHUB
+
+************************ PYTHON con github ************************
+
+-Lanzo el docker de chanfr/jenkins:
+        docker run --privileged -v /var/run/docker.sock:/var/run/docker/docker.sock -p 8000:8080 --name jenkinsMaster chanfr/jenkins
+
+-Saco la contraseña de jenkins
+        docker logs jenkinsMaster
+
+-Pongo la dirección IP del contenedor para que la use jenkins
+        docker inspect jenkinsMaster
+
+-Configuro un nuevo proyecto de estilo libre, de momento voy a tirar de gitub
+    Configuro url y credenciales de github (capturas)
+
+-Ejecutar línea de comandos (shell)
+#! /bin/bash
+py.test --junitxml results.xml test.py
+
+-Ejecuta automáticamente.
+
+************************ PYTHON con jenkinsFile ************************
+- Creo un proyecto multibranchPipeLine
