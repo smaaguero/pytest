@@ -23,4 +23,9 @@ py.test --junitxml results.xml test.py
 -Ejecuta automáticamente.
 
 ************************ PYTHON con jenkinsFile ************************
-- Creo un proyecto multibranchPipeLine
+- Creo un proyecto multibranchPipeLine (capturas)
+
+
+************************ C++                    ************************
+-Instalo xunit plugin
+-
