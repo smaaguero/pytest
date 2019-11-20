@@ -25,7 +25,7 @@ pipeline {
 			source venv/bin/activate
 			python --version
 			export PYTHONPATH=\$PYTHONPATH:\$PWD
-			py.test main.py --junitxml tests.xml
+			py.test test.py --junitxml tests.xml
 		    '''
 		}
 	}
